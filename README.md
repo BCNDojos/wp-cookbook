@@ -20,3 +20,35 @@ In order to setup your environment, you should run, within the repository:
     bundle install
 
 This will install [Berkshelf](http://berkshelf.com). [Rubocop](http://batsov.com/rubocop/), [Foodcritic](http://acrmp.github.io/foodcritic/), [Chefspec](https://docs.chef.io/chefspec.html), and [Test-kitchen](http://kitchen.ci/), [Kitchen-vagrant gem](https://rubygems.org/gems/kitchen-vagrant), and all their dependencies, within your setup.
+
+Once the dependencies have been installed, you can run the following command:
+
+    kitchen init --driver=kitchen-vagrant
+
+This command will create four elements:
+
+* `.kitchen.local.yml` file.
+* `.kitchen` directory.
+* `.gitignore` file, which will contain `.kitchen.local.yml` and `.kitchen/`, so those two will not be included in the repository.
+* `.kitchen.yml` file, containing the description of the test environment.
+
+You should want to keep the two last files into your cookbook's repository. Of course in this tutorial, this has been already done.
+
+## The `.kitchen.yml` file
+
+Let's see what the `.kithen.yml` file contains:
+
+    driver:
+      name: vagrant
+    
+    provisioner:
+      name: chef_solo
+
+    platforms:
+      - name: ubuntu-12.04
+      - name: centos-6.4
+    
+    suites:
+      - name: default
+        run_list:
+        attributes:
