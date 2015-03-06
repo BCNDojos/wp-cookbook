@@ -12,3 +12,11 @@ In order to follow the workshop in this repository, you should have installed th
 
 If you have [RVM](http://rvm.io), you will need to have Ruby 2.1.5 installed and it will create the gemset automagically.
 Once the Ruby stack is installed, you should run `bundle install` within the repository directory.
+
+## Setup
+
+In order to setup your environment, you should run, within the repository:
+
+    bundle install
+
+This will install [Berkshelf](http://berkshelf.com). [Rubocop](http://batsov.com/rubocop/), [Foodcritic](http://acrmp.github.io/foodcritic/), [Chefspec](https://docs.chef.io/chefspec.html), and [Test-kitchen](http://kitchen.ci/), and all their dependencies, within your setup.
