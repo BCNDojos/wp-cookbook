@@ -19,4 +19,4 @@ In order to setup your environment, you should run, within the repository:
 
     bundle install
 
-This will install [Berkshelf](http://berkshelf.com). [Rubocop](http://batsov.com/rubocop/), [Foodcritic](http://acrmp.github.io/foodcritic/), [Chefspec](https://docs.chef.io/chefspec.html), and [Test-kitchen](http://kitchen.ci/), and all their dependencies, within your setup.
+This will install [Berkshelf](http://berkshelf.com). [Rubocop](http://batsov.com/rubocop/), [Foodcritic](http://acrmp.github.io/foodcritic/), [Chefspec](https://docs.chef.io/chefspec.html), and [Test-kitchen](http://kitchen.ci/), [Kitchen-vagrant gem](https://rubygems.org/gems/kitchen-vagrant), and all their dependencies, within your setup.
