@@ -19,4 +19,12 @@ In order to setup your environment, you should run, within the repository:
 
     bundle install
 
-This will install [Berkshelf](http://berkshelf.com). [Rubocop](http://batsov.com/rubocop/), [Foodcritic](http://acrmp.github.io/foodcritic/), [Chefspec](https://docs.chef.io/chefspec.html), and [Test-kitchen](http://kitchen.ci/), [Kitchen-vagrant gem](https://rubygems.org/gems/kitchen-vagrant), and all their dependencies, within your setup.
+This will install [Berkshelf](http://berkshelf.com), [Rubocop](http://batsov.com/rubocop/), [Foodcritic](http://acrmp.github.io/foodcritic/), [Chefspec](https://docs.chef.io/chefspec.html), and [Test-kitchen](http://kitchen.ci/), [Kitchen-vagrant gem](https://rubygems.org/gems/kitchen-vagrant), and all their dependencies, within your setup.
+
+Now, we could bootstrap the cookbook using Berkshelf:
+
+    berks cookbook wp-cookbook . --license mit --maintainer BCNDojos --maintainer-email bcndojos@example.com
+
+This command will setup a lot of files.
+Some of these may overwrite existing LICENSE, README.md, or other files.
+Avoid this overwriting files, so we'll just stick with this repository code.
