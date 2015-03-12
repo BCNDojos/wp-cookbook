@@ -6,4 +6,5 @@ description 'Installs/Configures wp-cookbook'
 long_description 'Installs/Configures wp-cookbook'
 version '0.1.0'
 
-depends 'mysql', '<= 6.0.16'
+depends 'mysql', '~> 6.0.16'
+depends 'apt', '~> 2.6.1'
