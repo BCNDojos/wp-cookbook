@@ -1,3 +1,4 @@
+# rubocop:disable Style/SingleSpaceBeforeFirstArg
 name             'wp-cookbook'
 maintainer       'BCNDojos'
 maintainer_email 'bcndojos@example.com'

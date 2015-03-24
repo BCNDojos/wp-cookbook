@@ -28,3 +28,13 @@ Now, we could bootstrap the cookbook using Berkshelf:
 This command will setup a lot of files.
 Some of these may overwrite existing LICENSE, README.md, or other files.
 Avoid this overwriting files, so we'll just stick with this repository code.
+
+## Tests
+
+The first check to consider is syntax check.
+For standard Ruby syntax checking we're using Rubocop:
+
+    rubocop .
+
+Notice the `.rubocop.yml` file excluding some files which were created by Berkshelf.
+Also in the first line in `metadata.rb`, we added a Rubocop exception to avoid errors because of the extra spaces between the 'method names' and the arguments.

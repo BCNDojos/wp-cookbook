@@ -1,0 +1,5 @@
+AllCops:
+  Exclude:
+    - Berksfile
+    - Thorfile
+    - Vagrantfile
